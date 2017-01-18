@@ -1,0 +1,133 @@
+#!/bin/bash
+
+# .
+# ├── 1.design
+# │   ├── 1.domain
+# │   │   ├── README.md
+# │   │   └── domain.md
+# │   ├── 2.usecases
+# │   │   ├── README.md
+# │   │   ├── delete-report.md
+# │   │   ├── list-report.md
+# │   │   ├── post-report-change-status.md
+# │   │   ├── post-report-modify.md
+# │   │   └── post-report-new.md
+# │   ├── 3.robustnesses
+# │   ├── 4.architecture
+# │   ├── 5.sequences
+# │   └── README.md
+# ├── 2.test-scenario
+# │   ├── README.md
+# │   └── post-report.md
+# └── README.md
+
+
+
+FILE='README.md'
+touch ${FILE}
+echo '# PROJECT-NAME' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '## document' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [設計](1.design)' >> ${FILE}
+echo '1. [テストシナリオ](2.test-scenario)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design
+FILE='1.design/README.md'
+touch ${FILE}
+echo '# design documents' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [domain](1.domain)' >> ${FILE}
+echo '1. [usecase](2.usecases)' >> ${FILE}
+echo '1. [robustness](3.robustnesses)' >> ${FILE}
+echo '1. [architecture](4.architecture)' >> ${FILE}
+echo '1. [sequence](5.sequences)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design/1.domain
+FILE='1.design/1.domain/README.md'
+touch ${FILE}
+echo '# domain model' >> ${FILE}
+echo '' >> ${FILE}
+echo '## notice' >> ${FILE}
+echo '' >> ${FILE}
+echo 'チャートの表示には、google chromeとchrome extensionの[plantuml viewer](https://chrome.google.com/webstore/detail/plantuml-viewer/legbfeljfbjgfifnkmpoajgpgejojooj)が必要で、各チャート記述ファイルを`raw`表示でplantuml viewerに読み込んでください。' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design/2.usecases
+FILE='1.design/2.usecases/README.md'
+touch ${FILE}
+echo '# usecase' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [xx](uu.md)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design/3.robustnesses
+FILE='1.design/3.robustnesses/README.md'
+touch ${FILE}
+echo '# robustness' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [xx](uu.md)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design/4.architecture
+FILE='1.design/4.architecture/README.md'
+touch ${FILE}
+echo '# architecture' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [xx](uu.md)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design/5.sequences
+FILE='1.design/5.sequences/README.md'
+touch ${FILE}
+echo '# sequences' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [xx](uu.md)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 2.test-scenario
+FILE='2.test-scenario/README.md'
+touch ${FILE}
+echo '# test scenario' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [xx](uu.md)' >> ${FILE}
+echo '' >> ${FILE}
+
+# -------- editor config
+FILE=".editorconfig"
+touch ${FILE}
+echo '# EditorConfig helps developers define and maintain consistent' >> ${FILE}
+echo '# coding styles between different editors and IDEs' >> ${FILE}
+echo '# editorconfig.org' >> ${FILE}
+echo '' >> ${FILE}
+echo 'root = true' >> ${FILE}
+echo '' >> ${FILE}
+echo '' >> ${FILE}
+echo '[*]' >> ${FILE}
+echo '' >> ${FILE}
+echo '# Change these settings to your own preference' >> ${FILE}
+echo 'indent_style = space' >> ${FILE}
+echo 'indent_size = 2' >> ${FILE}
+echo '' >> ${FILE}
+echo '# We recommend you to keep these unchanged' >> ${FILE}
+echo 'end_of_line = lf' >> ${FILE}
+echo 'charset = utf-8' >> ${FILE}
+echo 'trim_trailing_whitespace = true' >> ${FILE}
+echo 'insert_final_newline = true' >> ${FILE}
+echo '' >> ${FILE}
+
+tree
