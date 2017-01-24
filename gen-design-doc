@@ -15,6 +15,7 @@
 # │   ├── 3.robustnesses
 # │   ├── 4.architecture
 # │   ├── 5.sequences
+# │   ├── 6.datasets
 # │   └── README.md
 # ├── 2.test-scenario
 # │   ├── README.md
@@ -45,6 +46,7 @@ echo '1. [usecase](2.usecases)' >> ${FILE}
 echo '1. [robustness](3.robustnesses)' >> ${FILE}
 echo '1. [architecture](4.architecture)' >> ${FILE}
 echo '1. [sequence](5.sequences)' >> ${FILE}
+echo '1. [dataset](6.datasets)' >> ${FILE}
 echo '' >> ${FILE}
 
 mkdir 1.design/1.domain
@@ -91,6 +93,16 @@ mkdir 1.design/5.sequences
 FILE='1.design/5.sequences/README.md'
 touch ${FILE}
 echo '# sequences' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [xx](uu.md)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design/6.datasets
+FILE='1.design/6.datasets/README.md'
+touch ${FILE}
+echo '# datasets' >> ${FILE}
 echo '' >> ${FILE}
 echo 'description' >> ${FILE}
 echo '' >> ${FILE}
