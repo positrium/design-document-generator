@@ -16,6 +16,7 @@
 # │   ├── 4.architecture
 # │   ├── 5.sequences
 # │   ├── 6.datasets
+# │   ├── 7.ui
 # │   └── README.md
 # ├── 2.test-scenario
 # │   ├── README.md
@@ -23,9 +24,8 @@
 # └── README.md
 
 
-
 FILE='README.md'
-touch ${FILE}
+echo ${FILE}
 echo '# PROJECT-NAME' >> ${FILE}
 echo '' >> ${FILE}
 echo 'description' >> ${FILE}
@@ -40,13 +40,14 @@ mkdir 1.design
 FILE='1.design/README.md'
 touch ${FILE}
 echo '# design documents' >> ${FILE}
-echo '' >> ${FILE}
+echo '' > ${FILE}
 echo '1. [domain](1.domain)' >> ${FILE}
 echo '1. [usecase](2.usecases)' >> ${FILE}
 echo '1. [robustness](3.robustnesses)' >> ${FILE}
 echo '1. [architecture](4.architecture)' >> ${FILE}
 echo '1. [sequence](5.sequences)' >> ${FILE}
 echo '1. [dataset](6.datasets)' >> ${FILE}
+echo '1. [dataset](7.ui)' >> ${FILE}
 echo '' >> ${FILE}
 
 mkdir 1.design/1.domain
@@ -58,6 +59,8 @@ echo '## notice' >> ${FILE}
 echo '' >> ${FILE}
 echo 'チャートの表示には、google chromeとchrome extensionの[plantuml viewer](https://chrome.google.com/webstore/detail/plantuml-viewer/legbfeljfbjgfifnkmpoajgpgejojooj)が必要で、各チャート記述ファイルを`raw`表示でplantuml viewerに読み込んでください。' >> ${FILE}
 echo '' >> ${FILE}
+FILE='1.design/1.domain/domain.puml'
+touch ${FILE}
 
 mkdir 1.design/2.usecases
 FILE='1.design/2.usecases/README.md'
@@ -101,6 +104,16 @@ echo '' >> ${FILE}
 
 mkdir 1.design/6.datasets
 FILE='1.design/6.datasets/README.md'
+touch ${FILE}
+echo '# datasets' >> ${FILE}
+echo '' >> ${FILE}
+echo 'description' >> ${FILE}
+echo '' >> ${FILE}
+echo '1. [xx](uu.md)' >> ${FILE}
+echo '' >> ${FILE}
+
+mkdir 1.design/7.ui
+FILE='1.design/7.ui/README.md'
 touch ${FILE}
 echo '# datasets' >> ${FILE}
 echo '' >> ${FILE}
